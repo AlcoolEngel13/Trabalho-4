@@ -1,0 +1,63 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background-color: rgb(142, 122, 216);
+}
+
+.container {
+    width: 70%;
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px 380px;
+    gap: 10px;
+    background-color: rgb(31, 71, 116);
+    padding: 10px;
+}
+
+.container * {
+    border: solid 1px #232323;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+header {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+
+main {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.sub-container {
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+}
+
+.sub-container * {
+    border-radius: 10px;
+}
+
+.cabecalho {
+  background-color: rgb(171, 177, 187);
+  grid-column: 1 / span 2;
+}
+
+.principal {
+  grid-column: 1 / span 1;
+  background-color: rgb(171, 177, 187);
+}
+
+.lateral {
+  grid-column: 2 / span 1;
+  background-color: rgb(171, 177, 187);
+}
